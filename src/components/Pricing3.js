@@ -34,20 +34,17 @@ const Pricing3 = () => {
       <div className="container">
         <div className="pricing-3-wrapper">
           <div className="row">
-            {/* Pricing tables */}
             <div className="col-lg-6 w-full w-100">
               <div className="pricing-3-table pr-25 wow fadeInUp">
                 <ul
                   className="pricing-3-list"
                   style={{
                     display: "grid",
-                    gridTemplateColumns: "auto auto",
                     justifyContent: "space-center",
                     width: "100%",
                     gap: "40px",
                   }}
                 >
-                  {/* Map over priceData to render pricing items */}
                   {priceData &&
                     priceData.map((item, index) => (
                       <li className="pricing-3-item" key={index}>
@@ -70,7 +67,6 @@ const Pricing3 = () => {
                 </ul>
               </div>
             </div>
-            {/* End of pricing tables */}
           </div>
         </div>
       </div>

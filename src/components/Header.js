@@ -58,6 +58,10 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const openMenu = () => {
+    document.body.classList.toggle("wsactive");
+  };
+
   if (loading) return <Loading />;
 
   return (
@@ -75,7 +79,11 @@ const Header = () => {
           >
             {priceData?.name}
           </span>
-          <a id="wsnavtoggle" className="wsanimated-arrow">
+          <a
+            id="wsnavtoggle"
+            className="wsanimated-arrow"
+            onClick={() => openMenu()}
+          >
             <span></span>
           </a>
           <a href={`tel:${priceData?.phone}`} className="callusbtn ico-20">
